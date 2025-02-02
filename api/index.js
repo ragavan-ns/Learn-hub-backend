@@ -16,7 +16,7 @@ dotenv.config();
 //-------------------------------- DataBase setup
 mongoose
   .connect(
-    `mongodb+srv://ragavanns24:Egr1tGs7uhj6skda@cluster0.ycush.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    `mongodb+srv://${process.env.MongoDB_UserName}:${process.env.MongoDB_Password}@cluster0.ycush.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Failed to connect to MongoDB", err));
