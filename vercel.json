@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "env": {
+    "MongoDB_UserName": "ragavanns24",
+    "MongoDB_Password": "@mongoDB_Password"
+  }
+}
